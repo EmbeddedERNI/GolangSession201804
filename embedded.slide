@@ -9,9 +9,15 @@ ERNI
 
 * Introduction
 
-* Video
+* A Tour of Go
 
 .iframe https://www.youtube.com/embed/ytEkHepK08c 530 1000
+.link https://research.swtch.com/gotour FAQ
 
-* 
+* Why Go Is Successful (aka Simplicity is Complicated)
 
+.iframe https://www.youtube.com/embed/k9Zbuuo51go 530 1000
+
+* Sharing code
+
+.link https://medium.com/learning-the-go-programming-language/calling-go-functions-from-other-languages-4c7d8bcc69bf Calling Go Functions from Other Languages
