@@ -21,5 +21,8 @@ ERNI
 * Sharing code
 
 .link https://medium.com/learning-the-go-programming-language/calling-go-functions-from-other-languages-4c7d8bcc69bf Calling Go Functions from Other Languages
+.link https://github.com/vladimirvivien/go-cshared-examples Github Example
 
 * Cross compile
+
+
