@@ -1,0 +1,3 @@
+[submodule "go-cshared-examples"]
+	path = go-cshared-examples
+	url = git@github.com:EmbeddedERNI/go-cshared-examples.git
