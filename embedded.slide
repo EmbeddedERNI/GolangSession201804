@@ -1,4 +1,4 @@
-Golang 
+Go 
 Embedded Community
 2 May 2018
 
@@ -18,11 +18,48 @@ ERNI
 
 .iframe https://www.youtube.com/embed/k9Zbuuo51go 530 1000
 
-* Sharing code
+* Sharing code 
+
+* Sharing code : Go Code
+
+go-cshared-examples/awesome.go
+
+.code go-cshared-examples/awesome.go /"C"/
+.code go-cshared-examples/awesome.go /export Add/,/{/
+.code go-cshared-examples/awesome.go /export Cosine/,/{/
+.code go-cshared-examples/awesome.go /export Sort/,/{/
+.code go-cshared-examples/awesome.go /export Log/,/{/
+
+go build -o awesome.so -buildmode=c-shared awesome.go
+
+* Sharing code : Shared code
+
+go-cshared-examples/awesome.h
+
+.code go-cshared-examples/awesome.h /Add/,/Log
 
 .link https://medium.com/learning-the-go-programming-language/calling-go-functions-from-other-languages-4c7d8bcc69bf Calling Go Functions from Other Languages
 .link https://github.com/vladimirvivien/go-cshared-examples Github Example
 
+* Sharing code : Hands on
+
+- Build shared
+- Build C "gcc -o client client1.c ./awesome.so"
+- Run from C
+- Run from python2.7 "python client.py"
+
 * Cross compile
 
+.iframe https://golang.org/doc/install/source#environment 530 1000
+.link https://golang.org/doc/install/source#environment enviroment variables
 
+* Cross compile : Hands on
+
+* Examples
+
+* Web Crawler
+
+* Real Stories
+
+.link http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/ 1 million request per minute
+.link https://movio.co/en/blog/migrate-Scala-to-Go/ From Scala to Go
