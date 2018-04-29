@@ -25,30 +25,35 @@ func findHref(t *html.Token) (string, error) {
 
 func FindUrlsIn(url string, depth int, urls chan<- CrawlerStep, errors chan<- error) {
 
-	response, err := http.Get(url)
+	// Part1 OMIT
+	// Get the webpage
+	response, err := http.Get(url) // HL1
 	if err != nil {
 		errors <- err
 		return
 	}
-
-	z := html.NewTokenizer(response.Body)
+	// Parse html code
+	z := html.NewTokenizer(response.Body) // HL2
 
 	for {
 		tt := z.Next()
 
 		switch {
-		case tt == html.ErrorToken:
-			// End of the document, we're done
+		case tt == html.ErrorToken: // HL3
+			// End of the document, we're done OMIT
 			errors <- nil
 			return
-		case tt == html.StartTagToken:
+		case tt == html.StartTagToken: // HL4
+			// find <a> tags
 			t := z.Token()
 			isAnchor := t.Data == "a"
-			if isAnchor {
-				// log.Println("We found a <a>!")
+			if isAnchor { //HL5
+				//Extract href
+				// END OMIT
+				// log.Println("We found a <a>!") OMIT
 				foundurl, finderr := findHref(&t)
 				if finderr != nil {
-					// log.Println("Not found href field")
+					// log.Println("Not found href field") OMIT
 					continue
 				}
 				urlformated, formaterr := urltools.ParseRequestURI(foundurl)
@@ -60,7 +65,9 @@ func FindUrlsIn(url string, depth int, urls chan<- CrawlerStep, errors chan<- er
 					// log.Println("Not valid host")
 					continue
 				}
+				// Part2 OMIT
 				urls <- CrawlerStep{url, urlformated.String(), depth}
+				// END OMIT
 			}
 		}
 	}

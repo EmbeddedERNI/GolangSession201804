@@ -59,6 +59,83 @@ go-cshared-examples/awesome.h
 
 * Web Crawler
 
+* Get and find href
+
+
+.code crawler/fetcher.go /FindUrlsIn/
+.code crawler/fetcher.go /Part1/,/END/
+
+* Get and find href
+
+.code crawler/fetcher.go /Part1/,/END/ HL1
+
+* Get and find href
+
+.code crawler/fetcher.go /Part1/,/END/ HL2
+
+* Get and find href
+
+.code crawler/fetcher.go /Part1/,/END/ HL3
+
+* Get and find href
+
+.code crawler/fetcher.go /Part1/,/END/ HL4
+
+* Get and find href
+
+.code crawler/fetcher.go /Part1/,/END/ HL5
+
+.code crawler/fetcher.go /Part2/,/END/
+
+* Async work
+
+.code crawler/main.go /Channels/,/END/ HL1
+.code crawler/main.go /FindUrlsIn/ HL1
+.code crawler/main.go /Part1/,/END/ HL1
+
+* Async work
+
+.code crawler/main.go /Channels/,/END/ HL2
+.code crawler/main.go /FindUrlsIn/ HL2
+.code crawler/main.go /Part1/,/END/ HL2
+* Async work
+
+.code crawler/main.go /Channels/,/END/ HL3
+.code crawler/main.go /FindUrlsIn/ HL3
+.code crawler/main.go /Part1/,/END/ HL3
+* Async work
+
+.code crawler/main.go /Channels/,/END/ HL4
+.code crawler/main.go /FindUrlsIn/ HL4
+.code crawler/main.go /Part1/,/END/ HL4
+* Async work
+
+.code crawler/main.go /Channels/,/END/ HL5
+.code crawler/main.go /FindUrlsIn/ HL5
+.code crawler/main.go /Part1/,/END/ HL5
+* Async work
+
+.code crawler/main.go /Channels/,/END/ HL6
+.code crawler/main.go /FindUrlsIn/ HL6
+.code crawler/main.go /Part1/,/END/ HL6
+* Async work
+
+.code crawler/main.go /Channels/,/END/ HL7
+.code crawler/main.go /FindUrlsIn/ HL7
+.code crawler/main.go /Part1/,/END/ HL7
+
+* Flow control
+
+.code crawler/main.go /Control/,/END/ HL1
+.code crawler/main.go /wgwait/,/END/ HL1
+
+* Flow control 
+
+.code crawler/main.go /case <-timeout/,/END/
+.code crawler/main.go /case done/,/END/
+
+* Give it a try!
+
 * Real Stories
 
 .link http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/ 1 million request per minute
