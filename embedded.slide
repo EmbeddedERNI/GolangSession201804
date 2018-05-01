@@ -136,6 +136,8 @@ go-cshared-examples/awesome.h
 
 * Give it a try!
 
+* Raspberrypi GPIO
+
 * Real Stories
 
 .link http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/ 1 million request per minute
